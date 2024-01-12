@@ -12,14 +12,14 @@
 
 - ATRANS.exe 실행
 
-![mainImage](/pic/main.PNG)
+<kbd> <img src="./pic/main.PNG" /> </kbd>
 
 ### 2. 변환기 설정
 
 - `Add Transformer` 버튼 클릭
-  ![clickBtn](/pic/addbunClick.png)
+  <kbd> <img src="./pic/addbunClick.png" /> </kbd>
 - 변환기 설정 창
-  ![Alt text](%EA%B7%B8%EB%A6%BC2.png)
+  <kbd><img src="./pic/그림2.png"/></kbd>
 
   - 변환기 설정 창에서 변환 타입 (ATRANS) 을 선택한 후, 입력 경로와 출력 경로, 사용 스레드 개수를 추가한다.
   - 입력 경로와 출력 경로는 같을 수 없으며, 모든 경로를 선택해야 변환기를 추가할 수 있다.
@@ -27,7 +27,7 @@
   - 로그파일과 원본 파일을 저장할 보관경로는 `출력경로\Atrans_save` 폴더로 지정된다.
 
 - 변환기 설정 완료
-  ![setting 완료](/pic/4.PNG)
+  <kbd><img src="./pic/4.PNG" /> </kbd>
   - 변환기를 추가하면 타일이 추가된다,
   - 타일에는 변환기의 변환 타입과 사용 스레드의 개수가 나타난다.
   - 해당 타일을 클릭하면, 변환기 설정 창이 다시 나타나 설정을 변경할 수 있다.
@@ -36,18 +36,18 @@
 ### 3. 변환 스레드 시작
 
 - 'START' 클릭
-  ![Alt text](/pic/start.png)
+  <kbd><img src="./pic/start.png" /> </kbd>
 
 - 스레드 작업 시작
-  ![Alt text](/pic/image-4.png)
+  <kbd><img src="./pic/image-4.png" /> </kbd>
   - 변환기에 설정한 스레드가 작업을 시작한다.
-    ![Alt text](/pic/스레드2.PNG)
+    <kbd><img src="./pic/스레드2.PNG" /> </kbd>
     - 스레드를 3개 미만으로 설정했을 때에는 사용하지 않는 스레드는 `THREAD NOT WORKING`으로 표시된다.
 
 ### 4. 파일 입력
 
 - 설정한 입력 경로에 파일을 추가한다.
-  ![Alt text](/pic/folder.PNG)
+  <kbd><img src="./pic/folder.PNG" /> </kbd>
 
   - 입력 파일의 이름은 `[TargetFileName]` 으로 시작해야 한다.
     - `[TargetFileName]` 과 파일 이름 사이의 공백은 무시된다. 파일 이름과 확장자 사이의 공백도 무시된다.
@@ -63,7 +63,7 @@
       </br>
 
 - 파일 변환 실행
-  ![Alt text](/pic/Inprogress.PNG)
+  <kbd><img src="./pic/Inprogress.PNG" /> </kbd>
 
   - 입력된 파일을 변환하는 작업에 들어가면, 해당 스레드는 `IN PROGRESS` 상태가 되며 진행중인 파일의 이름을 나타낸다.
   - 작업을 완료한 스레드는 `COMPLETE` 상태로 10초를 대기하며, 남은 대기 시간은 숫자로 표시된다.
@@ -73,11 +73,11 @@
     - 해당 파일의 헤더 역시 숫자가 붙은 파일 이름으로 저장된다.
 
 - 오류 리스트 확인
-  ![Alt text](/pic/그림4.png)
+  <kbd><img src="./pic/그림4.png" /> </kbd>
 
   - 실패(오류) 카운트 숫자를 클릭하여 에러 리스트를 새로운 창에서 확인할 수 있다.
 
-  ![Alt text](/pic/errorList.PNG)
+  <kbd><img src="./pic/errorList.PNG" /> </kbd>
 
   - 에러 리스트는 해당 스레드의 오류 목록을 출력한다.
   - 스레드 번호, 파일명, 오류내용, 작업일시, 파일 경로와 로그 파일의 경로를 나타낸다.
@@ -85,15 +85,15 @@
 
 ### 5. 프로그램 중지
 
-![Alt text](/pic/stop.png)
+<kbd><img src="./pic/stop.png" /> </kbd>
 
 - `FINISH` 버튼 혹은 상단 `x` 버튼을 통해 프로그램을 종료시킬 수 있다.
-  ![Alt text](/pic/warn.PNG)
+  <kbd><img src="./pic/warn.PNG" /> </kbd>
   - 경고창이 뜨고, `확인` 을 클릭하면 프로그램이 종료된다.
   - 대기중이던 ATRANS 입력 파일은 모두 보관경로로 이동하며, 로그파일이 생성된다.
   - 파일이 열린 상태로 작업 중에 스레드를 종료할 경우, 파일이 완성되지 않은 상태에서 종료될 수 있다.
 
-![Alt text](/pic/prev.png)
+<kbd><img src="./pic/prev.png" /> </kbd>
 
 - `PREVIOUS` 버튼을 클릭하여 이전 화면 (변환기 설정 화면) 으로 이동할 수 있다.
   - 종료버튼과 마찬가지로 경고창이 뜬다.
