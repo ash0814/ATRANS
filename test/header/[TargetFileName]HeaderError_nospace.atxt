@@ -1,0 +1,3 @@
+[Atrans]HeaderError_nospace
+
+header format is '[ATRANS](space)(fileName)'

@@ -1,0 +1,3 @@
+[Atrans]  HeaderError_spaces
+
+header format is '[ATRANS](space)(fileName)'
